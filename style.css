@@ -462,8 +462,74 @@ footer {
   }
   @media screen and (max-width: 768px) {
     .skill-content {
-        grid-template-columns:1fr 1fr; 
-        gap: 2rem; 
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #home img, #about img {
+        height: 250px;
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1.2em;
+    }
+
+    .social-icon button {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+        margin: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    #about p {
+        padding: 10%;
+    }
+
+    .skill-catagory {
+        padding: 10%;
+    }
+}
     
