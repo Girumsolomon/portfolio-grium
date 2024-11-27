@@ -1,0 +1,134 @@
+body{ 
+    background-image: url("https://i.pinimg.com/736x/d2/76/e0/d276e00aef8a6189b4497062174661a4.jpg");
+    background-color: #000000;
+    width:auto;
+    height: auto;
+    
+}
+.cont{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+.calculator{
+    border-style: ;
+    background-color: rgb(19, 18, 17);
+    padding: ;
+    margin: 0%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px #020202,-6px -6px 10px rgb(185, 184, 184);
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px #424242,-6px -6px 10px rgb(185, 184, 184);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 40%);
+    color: rgb(248, 246, 246);
+    cursor: pointer;
+    margin: 10px;
+    background: transparent;
+
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    border-radius: 0;
+    box-shadow: none;
+}
+.calculator form input.x{
+    color: rgb(34, 201, 57);
+    border-bottom-left-radius: 50%;
+    border-color: rgb(34, 201, 57);
+    border:1px solid;
+    border-style: solid;
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    border-right-color: rgb(34, 201, 57);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px ;
+    background-color: #171717;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    margin-left: 80%;
+}
+.calculator form input.opp{
+    background-color: rgb(43, 43, 43);
+    color: rgb(49, 200, 49);
+    font-size: 2em;
+}
+.calculator form input.c{
+    background-color: rgb(43, 43, 43);
+    color: red;
+    font-size: 2em;
+}
+.calculator form input:hover{
+    background-color: #484848;
+}
+.calculator form input:active{
+    background-color: #868686;
+    opacity: .8;
+}
+.history-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(19, 18, 17, 0.9);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.history-panel.show {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.history-panel h3 {
+    color: rgb(49, 200, 49);
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#history-list li {
+    color: white;
+    padding: 10px;
+    border-top: 1px solid #333;
+    cursor: pointer;
+}
+
+#history-list li:hover {
+    background-color: #2a2a2a;
+}
+
